@@ -1,0 +1,139 @@
+🚀 DEPLOYMENT CHECKLIST - Check These Off As You Go!
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 1: PREPARATION (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+[ ] MetaMask installed in browser
+[ ] MetaMask switched to Sepolia Test Network
+[ ] Have at least 0.05 Sepolia ETH in wallet
+
+    → Get Sepolia ETH: https://www.alchemy.com/faucets/ethereum-sepolia
+
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 2: DEPLOY CONTRACT (10 minutes)
+═══════════════════════════════════════════════════════════════
+
+[ ] Opened Remix IDE: https://remix.ethereum.org
+[ ] Created file: ScholarshipSystem.sol
+[ ] Copied contract code from contracts/ScholarshipSystem.sol
+[ ] Compiled successfully (green checkmark)
+[ ] Selected "Injected Provider - MetaMask"
+[ ] Connected MetaMask to Remix
+[ ] Clicked "Deploy" button
+[ ] Confirmed transaction in MetaMask
+[ ] Got contract address (starts with 0x...)
+
+    MY CONTRACT ADDRESS: _________________________________
+
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 3: GET API KEYS (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+[ ] Signed up at Infura: https://infura.io
+[ ] Created new API key
+[ ] Copied Sepolia RPC URL
+
+    MY INFURA URL: _________________________________
+
+[ ] Got my wallet address from MetaMask
+
+    MY WALLET ADDRESS: _________________________________
+
+[ ] Got my private key from MetaMask (Account Details → Show Private Key)
+
+    MY PRIVATE KEY: _________________________________ (KEEP SECRET!)
+
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 4: CONFIGURE ENVIRONMENT (2 minutes)
+═══════════════════════════════════════════════════════════════
+
+[ ] Updated backend/.env with:
+    - CONTRACT_ADDRESS
+    - ADMIN_ADDRESS
+    - ADMIN_PRIVATE_KEY
+    - SEPOLIA_RPC_URL
+
+[ ] Updated frontend-react/.env with:
+    - VITE_CONTRACT_ADDRESS
+
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 5: DEPOSIT TEST FUNDS (2 minutes)
+═══════════════════════════════════════════════════════════════
+
+[ ] In Remix, found depositFunds function
+[ ] Entered 0.5 in VALUE field
+[ ] Selected "Ether"
+[ ] Clicked depositFunds
+[ ] Confirmed in MetaMask
+[ ] Contract now has 0.5 ETH
+
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 6: START BACKEND (1 minute)
+═══════════════════════════════════════════════════════════════
+
+[ ] Opened terminal
+[ ] Ran: cd backend
+[ ] Ran: python app.py
+[ ] Backend started successfully
+[ ] Tested: http://localhost:5000/health
+[ ] Saw: "blockchain_connected": true
+
+
+═══════════════════════════════════════════════════════════════
+
+PHASE 7: TEST APPLICATION (5 minutes)
+═══════════════════════════════════════════════════════════════
+
+[ ] Opened: http://localhost:3000
+[ ] Connected MetaMask
+[ ] Went to Dashboard
+[ ] Filled application form
+[ ] Submitted application
+[ ] Confirmed in MetaMask
+[ ] Saw success message
+[ ] Went to Admin page
+[ ] Saw pending application
+[ ] Clicked Approve
+[ ] Confirmed in MetaMask
+[ ] Clicked Release Funds
+[ ] Confirmed in MetaMask
+[ ] Received funds in wallet!
+
+
+═══════════════════════════════════════════════════════════════
+
+VERIFICATION
+═══════════════════════════════════════════════════════════════
+
+[ ] Contract visible on Etherscan: https://sepolia.etherscan.io/address/YOUR_ADDRESS
+[ ] All transactions visible on Etherscan
+[ ] Backend health check passes
+[ ] Frontend connects to MetaMask
+[ ] Can submit applications
+[ ] Can approve applications
+[ ] Can release funds
+[ ] Transparency page shows all data
+
+
+═══════════════════════════════════════════════════════════════
+
+🎉 DEPLOYMENT COMPLETE!
+═══════════════════════════════════════════════════════════════
+
+Total Time: ~30 minutes
+Status: FULLY OPERATIONAL
+Next: Test all features and share your success!
+
+═══════════════════════════════════════════════════════════════

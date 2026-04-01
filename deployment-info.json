@@ -1,0 +1,8 @@
+{
+  "network": "sepolia",
+  "contractAddress": "0xEd3d29D7f2b3eC3708f52fa009d2E77Fb0DfAaD6",
+  "adminAddress": "0x1E0048D83ba01D823dc852cfabeb94fC76B089B7",
+  "deploymentTime": "2026-03-31T14:59:09.976Z",
+  "blockNumber": 10561267,
+  "transactionHash": "0x85819705a89e7941b74237b89189b8de3b31e5f1214fe51c8e51cbe07ca13a7a"
+}
